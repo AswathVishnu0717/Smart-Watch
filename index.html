@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styels.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+    <h1>SmartWatch</h1>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <div class="screen">
+        <div class="header">
+          <p class="timeInfo"></p>
+        </div>
+        <div class="home_page">
+          <h1 class="timeInfo size"></h1>
+          <span class="weather">
+           <h2 class="dayName"></h2>
+           <img class="weatherIcon" alt="weather icon">
+          </span>
+        </div>
+        <div class="message_page">
+          <span class="sub_container"> <p class="message_sub"></p></span>
+         
+          <p class="message_body"></p>
+      </div>
+      <div class="music_page">
+        <iframe class="spotify" src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3"  frameborder="0"></iframe>
+    </div>
+    <div class="timer_page">
+      <h2 class="stopwatch">00:00:00</h2>
+      <h3 class="stoppedTime"></h3>
+      <div class="buttons">
+          <i class='fas fa-redo-alt watch_buttons' onclick="reset()" style='font-size:24px'></i>
+          <i class='fas fa-play watch_buttons' onclick="startPause()" style='font-size:24px'></i>
+          <i class='fas fa-stop watch_buttons' onclick="stop()" style='font-size:24px'></i>
+      </div>
+  </div>
+        <div class="footer">
+          <i class='far fa-comment-dots icons' style='font-size:18px;'></i>
+          <i class='fas fa-music icons' style='font-size:18px'></i>
+          <i class='far fa-clock icons' style='font-size:18px'></i>
+      </div>
+    </div>
+    <div class="phone">
+        <img src="appleWatch.jpg"   alt="Avatar man">
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html> 
