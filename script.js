@@ -2,28 +2,20 @@
 
 const messageData={
     message_1:{
-        subject:"Flipkart Delivery",
-        body:"Your order is on the way!"
+        subject:"Order 1 Status",
+        body:"Your order yet to ship,Expected delivery in 5 days!"
     },
     message_2: {
-        subject: "Order Delayed - Flipkart",
-        body: "Due to some unforeseen circumstances, your order has been delayed"
+        subject: "Order 2 Status",
+        body: "Order is shipped,yet to reach Mumbai : Expected delivery in 2 days"
     },
     message_3:{
-        subject:"Return Processing - Flipkart",
-        body:"We have received your return and are processing it."
-    },
-    message_4:{
-        subject:"Product Not Available - Flipkart",
-        body:"The product you were looking for is not available. Please try again later or contact us."
-    },
-    message_5:{
-        subject:"Payment Successful - Flipkart",
-        body:"Congratulations! Your payment was successful. Enjoy your purchase."
+        subject:"Order 3 Status",
+        body:"Order is yet to be delivered.: Will be delivered Today"
     }
 }
 
-var city="erode"
+var city="coimbatore"
 var weatherData;
 async function getWeather(){
     const data= await fetch(`

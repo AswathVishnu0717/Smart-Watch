@@ -1,13 +1,9 @@
-
 body {
     font-family: Arial;
     color: #f7f7f7;
 }
-  h1{
-    font-size:5em ;
-  }
-  
-  .split {
+
+.split {
     height: 100%;
     width: 50%;
     position: fixed;
@@ -15,74 +11,164 @@ body {
     top: 0;
     overflow-x: hidden;
     padding-top: 20px;
-  }
-  
-  .left {
+}
+
+.left {
     left: 0;
     background-color: #2a78f5;
-  }
-  
-  .right {
+}
+
+.right {
     right: 0;
     background-color: #f7f7f7;
     justify-content: center;
-  }
-  
-  .centered {
+}
+
+.centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-  
-  .centered img {
-    width: 150px;
-    
-  }
-  .screen{
-      width:80%;
-      height:60%;
-      background-color: black;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-top: -50%;
-      margin-left: 10%;
-      border-radius: 40px 40px 40px 40px;
-      text-align: center;
-  }
-  .phone{
-      position: relative;
-      z-index: -1;
-      top: 50%;
-      left: 50%;
-  }
-  .bottonBar{
-      height: 10em;
-  }
-.header{
+}
+
+.centered img {
+    width: 300px;
+
+}
+
+.screen {
+    width: 80%;
+    height: 60%;
+    background-color: black;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    margin-top: -50%;
+    margin-left: 10%;
+    border-radius: 73px 73px 73px 73px;
+    text-align: center;
+    align-content: center;
+
+}
+
+.phone {
+    position: relative;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+}
+
+.bottonBar {
+    height: 10em;
+}
+
+.header {
     display: flex;
     justify-content: center
 }
-.timeInfo{
-        margin-bottom: 0px;
+
+.timeInfo {
+    margin-bottom: 0px;
 }
-.home_page{
+
+.home_page {
     text-align: center;
-    height: 0.3vh;
-    font-size: 6px;
-    margin-bottom: 10px;
- }
- .weather{
+    height: 18.2vh;
+}
+
+.weather {
+    display: flex;
+    justify-content: center;
+    height: 16vh;
+    margin-left: 2em;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3em;
+}
+
+.music_page {
+    overflow: scroll;
+    height: 21vh;
+}
+
+.timer_page {
+    height: 18.5vh;
+}
+
+.stopwatch {
+    text-align: center;
+}
+
+.stoppedTime {
+    text-align: center;
+    color: gray;
+}
+
+.buttons {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 13px;
+}
+
+.message_page {
+    background-color: white;
+    border-radius: 0px 30px 30px 20px;
+    overflow: hidden;
+    height: 17vh;
+    overflow-y: scroll;
+    margin-top: 2em;
+}
+
+.message_sub {
+    color: black;
+    overflow-y: scroll;
+}
+
+.sub_list {
+    border-bottom: 1px solid gray;
+}
+
+.sub_list:hover {
+    cursor: pointer;
+}
+
+.body_content {
+    background-color: white;
+    height: 18vh;
+}
+
+.header:hover {
+    cursor: pointer;
+}
+
+.icons:hover {
+    cursor: pointer;
+}
+
+.day_weather {
     display: flex;
     justify-content: center;
 }
-.size{
-    height: 2%;
+
+.msg_body_text {
+    color: black;
 }
-.footer{
-    display: flex;
-    justify-content: space-around; 
-    padding-top: 3em;
+
+.message_body {
+    background-color: white;
+    height: 5vh;
+}
+
+.watch_buttons:hover {
+    cursor: pointer;
+}
+
+.size {
+   
+   margin-top: 2em;
 }
