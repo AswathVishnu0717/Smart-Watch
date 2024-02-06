@@ -15,15 +15,24 @@ const messageData={
     }
 }
 
-var city="coimbatore"
+var city="Coimbatore"
 var weatherData;
+var weatherIcon;
+var latitude;
+var longitude;
+navigator.geolocation.getCurrentPosition(function(position) {
+    latitude = position.coords.latitude;
+    longitude = position.coords.longitude;
+})
 async function getWeather(){
     const data= await fetch(`
     https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=87cfbc9449359a5449b017e2d4c55013`)
-
+    const dataofWeather= await fetch(`https://openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&units=metric&appid=439d4b804bc8187953eb36d2a8c26a02`)
    
-  weatherData= await data.json();
-const iconId=weatherData.weather[0].icon
+weatherData= await data.json();
+weatherIcon = await dataofWeather.json();
+
+const iconId=weatherIcon.daily[0].weather[0].icon
 const iconUrl=`http://openweathermap.org/img/w/${iconId}.png`
 document.querySelector(".weatherIcon").src=iconUrl;
 }
@@ -81,7 +90,7 @@ function displayStoppedTime() {
 
 function startPause() {
     if (!running) {
-        timer = setInterval(updateStopwatch, 1000);
+        timer = setInterval(updateStopwatch, 100);
         running = true;
     } else {
         clearInterval(timer);

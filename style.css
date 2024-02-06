@@ -42,21 +42,17 @@ body {
     height: 60%;
     background-color: black;
     position: absolute;
-    top: 51%;
-    left: 50%;
-    margin-top: -50%;
-    margin-left: 10%;
-    border-radius: 73px 73px 73px 73px;
-    text-align: center;
-    align-content: center;
-
-}
-
-.phone {
-    position: relative;
-    z-index: -1;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 73px 73px 73px 73px;
+    text-align: center;
+}
+
+
+.phone {
+    width: 100%; /* Adjust the width for responsiveness */
+    margin: 0 auto; /* Center the phone image */
 }
 
 .bottonBar {
@@ -91,8 +87,10 @@ body {
 }
 
 .music_page {
-    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
     height: 21vh;
+    border-radius: 28px 28px 10px 10px;
 }
 
 .timer_page {
@@ -168,7 +166,9 @@ body {
     cursor: pointer;
 }
 
-.size {
-   
-   margin-top: 2em;
+.size { 
+    margin-top: 5%;
+    width: 110%; /* Make the Spotify iframe responsive */
+    height: 170%;/* Set a fixed height for better visibility  */
+    overflow-x: scroll; 
 }
